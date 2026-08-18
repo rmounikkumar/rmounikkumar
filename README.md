@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://r-mounik-kumar.vercel.app/">
-    <img src="https://raw.githubusercontent.com/rmounikkumar/portfolio-website/master/public/banner.png" alt="R. Mounik Kumar" width="480" />
+    <video src="https://raw.githubusercontent.com/rmounikkumar/rmounikkumar/main/banner-video.mp4" width="480" autoplay muted loop playsinline></video>
   </a>
 </p>
 
