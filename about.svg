@@ -1,4 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="800" height="320" viewBox="0 0 800 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#050807"/>
+      <stop offset="1" stop-color="#08120c"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="1.5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
   <style>
     text { font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; font-size: 14px; dominant-baseline: middle; }
     @keyframes ln0 { 0%,0% { opacity: 0 } 2%,88% { opacity: 1 } 95%,100% { opacity: 0 } }
@@ -9,6 +19,7 @@
     @keyframes ln5 { 0%,20% { opacity: 0 } 22%,88% { opacity: 1 } 95%,100% { opacity: 0 } }
     @keyframes ln6 { 0%,24% { opacity: 0 } 26%,88% { opacity: 1 } 95%,100% { opacity: 0 } }
     @keyframes ln7 { 0%,28% { opacity: 0 } 30%,88% { opacity: 1 } 95%,100% { opacity: 0 } }
+    @keyframes ln8 { 0%,32% { opacity: 0 } 34%,88% { opacity: 1 } 95%,100% { opacity: 0 } }
     @keyframes blink { 0%,49% { opacity: 1 } 50%,100% { opacity: 0 } }
     .ln0 { animation: ln0 12s ease-in-out infinite }
     .ln1 { animation: ln1 12s ease-in-out infinite }
@@ -18,20 +29,35 @@
     .ln5 { animation: ln5 12s ease-in-out infinite }
     .ln6 { animation: ln6 12s ease-in-out infinite }
     .ln7 { animation: ln7 12s ease-in-out infinite }
+    .ln8 { animation: ln8 12s ease-in-out infinite }
   </style>
-  <rect width="100%" height="100%" fill="#0a0a0b" rx="14" ry="14"/>
-  <g opacity="0.5">
-    <circle cx="24" cy="24" r="6" fill="#ff5f57"/>
-    <circle cx="44" cy="24" r="6" fill="#febc2e"/>
-    <circle cx="64" cy="24" r="6" fill="#28c840"/>
+
+  <rect width="100%" height="100%" fill="url(#bg)" rx="14" ry="14"/>
+
+  <!-- Matrix rain (subtle) -->
+  <g font-size="11" font-family="monospace" fill="#22c55e" opacity="0.3">
+    <text x="30"  y="50"   style="animation: ln0 9s linear infinite">0 A 5</text>
+    <text x="90"  y="130"  style="animation: ln1 8s linear infinite">C 3 7</text>
+    <text x="150" y="60"   style="animation: ln2 7s linear infinite">9 2 F</text>
+    <text x="230" y="150"  style="animation: ln3 9.5s linear infinite">4 B 1</text>
+    <text x="330" y="40"   style="animation: ln4 8.5s linear infinite">E 8 0</text>
+    <text x="470" y="140"  style="animation: ln5 6.5s linear infinite">6 D ア</text>
+    <text x="590" y="55"   style="animation: ln6 9s linear infinite">2 C 5</text>
+    <text x="700" y="130"  style="animation: ln7 8s linear infinite">F 1 9</text>
   </g>
-  <text x="400" y="28" fill="#5a5a64" font-family="ui-monospace, monospace" font-size="11" text-anchor="middle">~ / about.md</text>
-  <g class="ln0" transform="translate(40 68)"><text fill="#FACC15">$</text><text x="20" fill="#e7e7ea">cat ~/about.md</text></g>
-  <g class="ln1" transform="translate(40 112)"><text fill="#5a5a64"># </text><text x="22" fill="#e7e7ea">Hi, I&apos;m R. Mounik Kumar</text></g>
-  <g class="ln2" transform="translate(40 134)"><text fill="#FACC15">&gt;</text><text x="20" fill="#e7e7ea">I build full-stack web apps with React, Next.js, Node.js &amp; MongoDB.</text></g>
-  <g class="ln3" transform="translate(40 156)"><text fill="#FACC15">&gt;</text><text x="20" fill="#e7e7ea">3rd-year B.Tech CSE student. I learn by building real projects</text></g>
-  <g class="ln4" transform="translate(40 178)"><text fill="#FACC15">&gt;</text><text x="20" fill="#e7e7ea">like e-commerce stores, AI platforms &amp; this very portfolio.</text></g>
-  <g class="ln5" transform="translate(40 222)"><text fill="#5a5a64"># </text><text x="22" fill="#e7e7ea">tags</text></g>
-  <g class="ln6" transform="translate(40 244)"><text fill="#5a5a64">[ Full-Stack Developer ]  [ B.Tech CSE ]  [ India ]</text></g>
-  <g class="ln7" transform="translate(40 288)"><text fill="#FACC15">$</text><rect x="20" y="-7" width="9" height="14" fill="#e7e7ea" style="animation: blink 1s steps(1) infinite" /></g>
+
+  <line x1="0" y1="40" x2="800" y2="40" stroke="#22c55e" stroke-opacity="0.15" stroke-width="1"/>
+  <circle cx="24" cy="24" r="6" fill="#ff5f57" opacity="0.8"/>
+  <circle cx="44" cy="24" r="6" fill="#febc2e" opacity="0.8"/>
+  <circle cx="64" cy="24" r="6" fill="#28c840" opacity="0.8"/>
+  <text x="400" y="28" fill="#22c55e" fill-opacity="0.7" font-family="ui-monospace, monospace" font-size="11" text-anchor="middle">root@mounik:~$ cat /etc/mounik.conf</text>
+
+  <g class="ln0" transform="translate(40 68)"><text fill="#FACC15" filter="url(#glow)">root@mounik:~$</text><text x="140" fill="#86efac">whoami</text></g>
+  <g class="ln1" transform="translate(40 112)"><text fill="#22c55e"># </text><text x="22" fill="#e7e7ea">operator</text><text x="140" fill="#FACC15">:</text><text x="152" fill="#86efac">R. Mounik Kumar</text></g>
+  <g class="ln2" transform="translate(40 134)"><text fill="#22c55e"># </text><text x="22" fill="#e7e7ea">skillset</text><text x="140" fill="#FACC15">:</text><text x="152" fill="#86efac">full-stack · android · machine-learning</text></g>
+  <g class="ln3" transform="translate(40 156)"><text fill="#22c55e"># </text><text x="22" fill="#e7e7ea">weapons</text><text x="140" fill="#FACC15">:</text><text x="152" fill="#86efac">React · Next.js · Node · MongoDB · Kotlin</text></g>
+  <g class="ln4" transform="translate(40 178)"><text fill="#22c55e"># </text><text x="22" fill="#e7e7ea">status</text><text x="140" fill="#FACC15">:</text><text x="152" fill="#4ade80">online ● — open to missions</text></g>
+  <g class="ln5" transform="translate(40 222)"><text fill="#FACC15" filter="url(#glow)">root@mounik:~$</text><text x="140" fill="#86efac">cat /etc/credentials.enc</text></g>
+  <g class="ln6" transform="translate(40 244)"><text fill="#22c55e">//</text><text x="24" fill="#3f6212">Credential file encrypted. Key required —</text><text x="420" fill="#FACC15">[ REMOTE ACCESS DENIED ]</text></g>
+  <g class="ln7" transform="translate(40 288)"><text fill="#FACC15" filter="url(#glow)">root@mounik:~$</text><rect x="140" y="-7" width="10" height="15" fill="#4ade80" style="animation: blink 1s steps(1) infinite" /></g>
 </svg>

@@ -1,4 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="800" height="300" viewBox="0 0 800 300">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#050807"/>
+      <stop offset="1" stop-color="#08120c"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="1.5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
   <style>
     text { font-family: ui-monospace, "JetBrains Mono", "SF Mono", Menlo, Consolas, monospace; }
     @keyframes blink { 0%,49% { opacity: 1 } 50%,100% { opacity: 0 } }
@@ -22,40 +32,45 @@
     @keyframes tchip8 { 0%,20% { opacity: 0 } 22%,92% { opacity: 1 } 97%,100% { opacity: 0 } }
     .tchip8 { animation: tchip8 12s ease-out infinite; }
   </style>
-  <rect width="100%" height="100%" fill="#0a0a0b" rx="14" ry="14"/>
-  
-  <rect x="0" y="0" width="800" height="28" fill="#0a0a0b" rx="14" ry="14"/>
-  <rect x="0" y="14" width="800" height="14" fill="#0a0a0b"/>
-  <line x1="0" y1="28" x2="800" y2="28" stroke="#5a5a64" stroke-width="0.5" stroke-opacity="0.4"/>
-  <g opacity="0.55">
-    <circle cx="22" cy="14" r="5.5" fill="#ff5f57"/>
-    <circle cx="40" cy="14" r="5.5" fill="#febc2e"/>
-    <circle cx="58" cy="14" r="5.5" fill="#28c840"/>
+
+  <rect width="100%" height="100%" fill="url(#bg)" rx="14" ry="14"/>
+
+  <!-- rain -->
+  <g font-size="11" font-family="monospace" fill="#22c55e" opacity="0.25">
+    <text x="40"  y="90"  style="animation: tchip0 9s linear infinite">7 F 2</text>
+    <text x="120" y="60"  style="animation: tchip1 8s linear infinite">C 0 9</text>
+    <text x="220" y="180" style="animation: tchip2 7s linear infinite">5 3 ア</text>
+    <text x="340" y="100" style="animation: tchip3 9.5s linear infinite">E 8 4</text>
+    <text x="500" y="200" style="animation: tchip4 6.5s linear infinite">B 1 6</text>
+    <text x="650" y="80"  style="animation: tchip5 8.5s linear infinite">A 9 ロ</text>
   </g>
-  <text x="400" y="15" fill="#5a5a64" font-family="ui-monospace, monospace" font-size="11" text-anchor="middle" dominant-baseline="middle">~/skills</text>
 
-  <!-- Command line -->
-  <text x="40" y="76.5" fill="#FACC15" font-size="14" dominant-baseline="middle">$</text>
-  <text x="62" y="76.5" fill="#e7e7ea" font-size="14" dominant-baseline="middle">which --skills</text>
+  <rect x="0" y="0" width="800" height="28" fill="#050807" rx="14" ry="14"/>
+  <rect x="0" y="14" width="800" height="14" fill="#050807"/>
+  <line x1="0" y1="28" x2="800" y2="28" stroke="#22c55e" stroke-width="0.5" stroke-opacity="0.3"/>
+  <circle cx="22" cy="14" r="5.5" fill="#ff5f57" opacity="0.8"/>
+  <circle cx="40" cy="14" r="5.5" fill="#febc2e" opacity="0.8"/>
+  <circle cx="58" cy="14" r="5.5" fill="#28c840" opacity="0.8"/>
+  <text x="400" y="15" fill="#22c55e" fill-opacity="0.7" font-family="ui-monospace, monospace" font-size="11" text-anchor="middle" dominant-baseline="middle">root@mounik:~$ ./load_arsenal.sh</text>
 
-  <!-- Output marker -->
-  <text x="40" y="99.5" fill="#5a5a64" font-size="14" dominant-baseline="middle">→</text>
-  <text x="62" y="99.5" fill="#5a5a64" font-size="14" dominant-baseline="middle">9 matches</text>
+  <text x="40" y="76.5" fill="#FACC15" filter="url(#glow)" font-size="14" dominant-baseline="middle">root@mounik:~$</text>
+  <text x="168" y="76.5" fill="#86efac" font-size="14" dominant-baseline="middle">kali --list-skills</text>
 
-  <!-- Row 1 -->
-  <text class="tchip0" x="62" y="138.5" fill="#FACC15" font-size="14" dominant-baseline="middle">[ JavaScript ]</text>
-  <text class="tchip1" x="198" y="138.5" fill="#e7e7ea" font-size="14" dominant-baseline="middle">[ TypeScript ]</text>
-  <text class="tchip2" x="334" y="138.5" fill="#FACC15" font-size="14" dominant-baseline="middle">[ React ]</text>
-  <text class="tchip3" x="422" y="138.5" fill="#e7e7ea" font-size="14" dominant-baseline="middle">[ Next.js ]</text>
+  <text x="40" y="99.5" fill="#3f6212" font-size="14" dominant-baseline="middle">→</text>
+  <text x="62" y="99.5" fill="#22c55e" font-size="14" dominant-baseline="middle"></text>
+  <text x="168" y="99.5" fill="#3f6212" font-size="14" dominant-baseline="middle">// 9 exploits loaded</text>
 
-  <!-- Row 2 -->
-  <text class="tchip4" x="62" y="173.5" fill="#e7e7ea" font-size="14" dominant-baseline="middle">[ Node.js ]</text>
-  <text class="tchip5" x="174" y="173.5" fill="#FACC15" font-size="14" dominant-baseline="middle">[ Express ]</text>
-  <text class="tchip6" x="276" y="173.5" fill="#e7e7ea" font-size="14" dominant-baseline="middle">[ MongoDB ]</text>
-  <text class="tchip7" x="398" y="173.5" fill="#FACC15" font-size="14" dominant-baseline="middle">[ Python ]</text>
-  <text class="tchip8" x="500" y="173.5" fill="#e7e7ea" font-size="14" dominant-baseline="middle">[ Java ]</text>
+  <text class="tchip0" x="40" y="140.5" fill="#FACC15" font-size="14" dominant-baseline="middle">[ JavaScript ]</text>
+  <text class="tchip1" x="180" y="140.5" fill="#86efac" font-size="14" dominant-baseline="middle">[ TypeScript ]</text>
+  <text class="tchip2" x="320" y="140.5" fill="#FACC15" font-size="14" dominant-baseline="middle">[ React ]</text>
+  <text class="tchip3" x="410" y="140.5" fill="#86efac" font-size="14" dominant-baseline="middle">[ Next.js ]</text>
 
-  <!-- Trailing prompt + cursor -->
-  <text x="40" y="227.5" fill="#FACC15" font-size="14" dominant-baseline="middle">$</text>
-  <rect class="cursor" x="62" y="219" width="8" height="15" fill="#e7e7ea"/>
+  <text class="tchip4" x="40" y="175.5" fill="#86efac" font-size="14" dominant-baseline="middle">[ Node.js ]</text>
+  <text class="tchip5" x="152" y="175.5" fill="#FACC15" font-size="14" dominant-baseline="middle">[ Express ]</text>
+  <text class="tchip6" x="256" y="175.5" fill="#86efac" font-size="14" dominant-baseline="middle">[ MongoDB ]</text>
+  <text class="tchip7" x="376" y="175.5" fill="#FACC15" font-size="14" dominant-baseline="middle">[ Python ]</text>
+  <text class="tchip8" x="478" y="175.5" fill="#86efac" font-size="14" dominant-baseline="middle">[ Kotlin ]</text>
+
+  <text x="40" y="231.5" fill="#FACC15" filter="url(#glow)" font-size="14" dominant-baseline="middle">root@mounik:~$</text>
+  <rect class="cursor" x="168" y="222.5" width="9" height="16" fill="#4ade80"/>
 </svg>
