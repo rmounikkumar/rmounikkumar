@@ -3,9 +3,9 @@
 </p>
 
 <p align="center">
-  <a href="https://r-mounik-kumar.vercel.app/"><img src="https://img.shields.io/badge/Portfolio-FACC15?style=for-the-badge&logo=vercel&logoColor=black" /></a>
-  <a href="https://www.linkedin.com/in/rmounikkumar/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-  <a href="mailto:rmounikkumar@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+  <a href="https://r-mounik-kumar.vercel.app/"><img src="https://img.shields.io/badge/PORTFOLIO-22c55e?style=for-the-badge&logo=vercel&logoColor=black&labelColor=0a0a0a" /></a>
+  <a href="https://www.linkedin.com/in/rmounikkumar/"><img src="https://img.shields.io/badge/LINKEDIN-22c55e?style=for-the-badge&logo=linkedin&logoColor=black&labelColor=0a0a0a" /></a>
+  <a href="mailto:rmounikkumar@gmail.com"><img src="https://img.shields.io/badge/EMAIL-22c55e?style=for-the-badge&logo=gmail&logoColor=black&labelColor=0a0a0a" /></a>
 </p>
 
 ---
@@ -16,7 +16,7 @@
 
 ---
 
-## 🧰 Tech Stack
+## ◢ ARSENAL // TECH STACK
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/rmounikkumar/rmounikkumar/main/skills.svg" width="800" />
@@ -30,9 +30,9 @@
 
 ---
 
-## 📦 Featured Projects
+## ◢ MISSIONS // FEATURED PROJECTS
 
-### 🌐 Full-Stack Web Apps
+### ▸ Full-Stack Web Apps
 
 <details>
 <summary><b>ShopEasy</b> — Full-stack e-commerce store</summary>
@@ -58,7 +58,7 @@ A full-stack education platform with separate Student / Parent / Teacher dashboa
 
 </details>
 
-### 📱 Android
+### ▸ Android
 
 <details>
 <summary><b>WaveBeat</b> — Offline Android music player</summary>
@@ -72,7 +72,7 @@ A lightweight, offline-first music player for Android built from scratch.
 
 </details>
 
-### 🛡️ Security / ML
+### ▸ Security / ML
 
 <details>
 <summary><b>SMS Security Gateway</b> — AI SMS threat detection</summary>
@@ -86,7 +86,7 @@ A defensive cybersecurity platform that classifies SMS as spam/ham using a fine-
 
 </details>
 
-### 🎮 Games
+### ▸ Games
 
 <details>
 <summary><b>PocketPuzzle</b> — 2048-style merge puzzle PWA</summary>
@@ -100,7 +100,7 @@ A polished, ad-fundable 2048-style puzzle game for the browser.
 
 </details>
 
-### 🎨 Personal
+### ▸ Personal
 
 <details>
 <summary><b>Portfolio Website</b> — This 3D portfolio</summary>
@@ -116,19 +116,19 @@ An interactive single-page portfolio with a Spline 3D robot, scroll-driven paral
 
 ---
 
-## 📈 GitHub
+## ◢ GRID STATUS // GITHUB
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/rmounikkumar/rmounikkumar/main/gh-stats.svg" width="800" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=rmounikkumar&theme=dark&hide_border=true&background=0D1117&ring=FACC15&fire=FACC15&currStreakLabel=FACC15&border=30363D" height="170" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=rmounikkumar&theme=dark&hide_border=true&background=050807&ring=22c55e&fire=22c55e&currStreakLabel=22c55e&border=22c55e" height="170" />
 </p>
 
 ---
 
-## 🎓 Certificates
+## ◢ ACCESS CODES // CERTIFICATES
 
 - Java Programming: Arrays, Lists, and Structured Data (Coursera)
 - Version Control with Git (Coursera)
