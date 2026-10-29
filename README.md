@@ -100,6 +100,20 @@ A polished, ad-fundable 2048-style puzzle game for the browser.
 
 </details>
 
+### 🪟 Windows Desktop
+
+<details>
+<summary><b>Keyboard Studio</b> — Lighting control for a USB keyboard</summary>
+
+A Windows app that drives the ScrollLock LED of a CASUE USB keyboard with 14 lighting effects, a live preview, and a speed slider.
+
+- **Features:** 14 effects (steady, breathe, aurora, heartbeat, strobe, candle, SOS, typing, CPU/disk/net reactive), live preview, speed slider, driver-level diagnostics report, self-contained packaged exe
+- **Stack:** Python · PySide6 (Qt) · ctypes · Win32 IOCTL · PyInstaller
+
+[🔗 View Code](https://github.com/rmounikkumar/keyboard-studio-windows) · [⬇️ Download](https://github.com/rmounikkumar/keyboard-studio-windows/releases/latest)
+
+</details>
+
 ### 🎨 Personal
 
 <details>
